@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUL Books | EDU Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../CSS/navfoot.css">
+    <link rel="stylesheet" href="../CSS/externalcss.css">
+    <link rel="stylesheet" href="../CSS/books.css">
+    <link rel="icon" type="image/x-icon" href="../Icon/favicon.ico">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-white">
+        <a class="navbar-brand" href="#">
+            <img src="../Image/Logo.png" alt="Logo" width="50" height="50">
+            <a class="navbar-brand" href="index.html"><span class="navbar-text">EDUL</span></a>
+        </a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                    </path>
+                </svg>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="../pages/services.html">Library Guide</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/about.html">About Us</a></li>
+                <div class="edu-link-foundation">
+                    <li class="nav-item"><a class="nav-link edu-library-link" href="../index.html">EDU LIBRARY</a></li>
+                </div>
+                <li class="nav-item"><a class="nav-link" href="../pages/books.html">Books</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Advanced Category</a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="extended.html#stu">For Students</a>
+                        <a class="dropdown-item" href="extended.html#par">For Parents</a>
+                        <a class="dropdown-item" href="extended.html#tea">For Teachers</a>
+                        <a class="dropdown-item" href="extended.html#5min">For 5mins</a>
+                        <a class="dropdown-item" href="extended.html#lin">For Linguist</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link btn btn-outline-primary" href="login.html">Sign in/up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row tab-books">
+        <div class="col-md-4 sidebar-books">
+            <h2>EDUL Library</h2>
+            <ul class="nav nav-tabs nav-pills flex-column sidebar-books-menu">
+                <li class="nav-item book-genre sidebar-link active" onclick="active();" data-filter="all">General</li>
+                <li class="nav-item book-genre sidebar-link" onclick="active();" data-filter="educational">Educational</li>
+                <li class="nav-item book-genre sidebar-link" onclick="active();" data-filter="stories">Stories & Novels</li>
+                <li class="nav-item book-genre sidebar-link" onclick="active();" data-filter="health">Healthcare</li>
+                <li class="nav-item book-genre sidebar-link" onclick="active();" data-filter="science">Science & Technology</li>
+                <li class="nav-item book-genre sidebar-link" onclick="active();" data-filter="philosophy">Philosophy & Religion</li>
+                <li class="nav-item book-genre sidebar-link" onclick="active();" data-filter="pastime">Pastime Activities</li>
+                <li class="nav-item book-genre sidebar-link" onclick="active();" data-filter="psychology">Psychology</li>
+                <li class="nav-item book-genre sidebar-link" onclick="active();" data-filter="cooking">Cooking</li>
+                <li class="nav-item book-genre sidebar-link" onclick="active();" data-filter="animals">Animals & Zoology</li>
+                <li class="nav-item book-genre sidebar-link" onclick="active();" data-filter="art">Art</li>
+            </ul>
+        </div>
+        <div class="col-md-8 books">
+            <h2 id="bookGenre">General</h2>
+            <div class="tab-content-books d-flex flex-wrap justify-content-center">
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Harry Potter (Complete).png" alt="">
+                    </div>
+                    <h3>Harry Potter (Complete Edition)</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1huRFV_Jk7RQ_d3RP0pVN7uBXCaoI2k4B/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="animals educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Are we smart enough to know.jfif" alt="">
+                    </div>
+                    <h3>Are we smart enough to know how smart animals are?</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1HsggM28mKfunrxoTkCEC4wK9D6llHV7U/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="art pastime educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Leonardo D.V's Notebook.png" alt="">
+                    </div>
+                    <h3>Leonardo Da Vinci's Notebook</h3>
+                    <p>Note: This is a very long book but rare. You need to scroll down a lot of pages to read the main texts.</p>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1lf7_vt2ix_tPiIVsP3DQPnCle1HoKztz/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="educational philosophy book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Abhidhama Lecture.png" alt="">
+                    </div>
+                    <h3>အဘိဓမ္မာ ပို့ချမှုများ</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1A_5LoZSowySXav0VtDHnBc9PnKG1NqqH/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Blending in.png" alt="">
+                    </div>
+                    <h3>Blending in</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1EfFNNl-rHDqpQVTFEbp-5ObFzeeUz5sC/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Fantastic Beasts and where to find them (JK).png" alt="">
+                    </div>
+                    <h3>Fantastic Beasts and where to find them</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1pfcSrIXFZyvt4_fP_jfVWl6TriY-ddbt/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="animals educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/101 facts about polar animals.png" alt="">
+                    </div>
+                    <h3>101 Facts about Polar Animals</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1VlaJ9Zn15MH09dWb6zWYMv2LA_TKNNTC/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/A fistful of horror.png" alt="">
+                    </div>
+                    <h3>A fistful of horror</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1mn2Xhl2WOp1ZXxPz8w4TuQzOMa4dIuN1/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Future35.png" alt="">
+                    </div>
+                    <h3>The future of Native Languages</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1u_2RsmqEvxC4JLdbYegk7dENBFw1EAI0/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="pastime educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Chess Guide.png" alt="">
+                    </div>
+                    <h3>How to play Chess</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1ZGmpxxiXciXcFYzLtDxglMcrFTLTahJw/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="animals educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Animal attraction.png" alt="">
+                    </div>
+                    <h3>Animal Attraction</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1M8BSiPikub2iIbfVZnptbi2GZslS0dYN/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="educational philosophy book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Kan Hu The.png" alt="">
+                    </div>
+                    <h3>ကံဟူသည်</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1Tzio__75V6Xbu8b44qqTNvvuZ3MOsgrx/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="health educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Home Remedies for Colon Health.png" alt="">
+                    </div>
+                    <h3>Home Remedies for Colon Health</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1EDZ_r3xPHu66S6YL-YHvpDDzujfNUOf5/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Gallery of Horror.png" alt="">
+                    </div>
+                    <h3>Gallery of Horror</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1_G-rFZFmxeC0DtHNmtW3BhLJZ9mlMXpV/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Jokes in Greek Comedy.png" alt="">
+                    </div>
+                    <h3>Jokes in Greek Comedy</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1HuivFEASBvk22BLKoXuO8K5pehb_7_xH/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="animals stories educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Christmas in animal land.png" alt="">
+                    </div>
+                    <h3>Christmas in animal land</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/11D7mABrQdMICIRipr3GXxupwyePPYYZ_/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="health educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Improving Sleep.png" alt="">
+                    </div>
+                    <h3>Improving Sleep</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/17tmkTP6xUGxq-PhFbgDaKbyzG8SCcLb9/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="psychology educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/The 48 Laws of Power.png" alt="">
+                    </div>
+                    <h3>The 48 Laws of Power</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1H_L0DkhadJDKVy1BtzK0D-qRzoyzt27p/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="philosophy educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Satipahtan.png" alt="">
+                    </div>
+                    <h3>သတိပဌာန်တရား - အနှစ်ချုပ်</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/179epq6So1fVDKnS5dBAKJ6NlSsReXHiv/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="animals educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Fear of the animal planet.png" alt="">
+                    </div>
+                    <h3>Fear of the animal planet</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1f2hNyXtQER3MAtY3h_zqUO_PNSjvtLKZ/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/The Comedy Bible.png" alt="">
+                    </div>
+                    <h3>The Comedy Bible</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1ChVyBKorCubaQLuIONzKCHzf8birl1RH/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="health educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Protecting Children's Health.png" alt="">
+                    </div>
+                    <h3>Protecting Children's health in a changing environment</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1xxRRTv6xnvV0HBpm2dt4nAwjboucRw-B/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="animals educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Learning Animals' language.png" alt="">
+                    </div>
+                    <h3>Learning animals' language</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1K6CHCvEkn87h0UkYpSwrdXspBcPI8wzv/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="philosophy educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/human & Abhidhma.png" alt="">
+                    </div>
+                    <h3>လူသားနဲ့ အဘိဓမ္မာ</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1gi9PgEZ_ORjqHukBi49z8Z5m8Rc0qpWX/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Masters of Gothic Horrors.png" alt="">
+                    </div>
+                    <h3>Masters of Gothic Horrors</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1UladaUKaHo0s-IvZBuku_Y2TD-lRz_-k/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="animals educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Longman's illustrated animal encyclopedia.png" alt="">
+                    </div>
+                    <h3>Longman's illustrated animal encyclopedia</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1wgGmnhwvfjK1luevtmEXwGzvrA6vH6JR/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="health educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Women's Health and Development.png" alt="">
+                    </div>
+                    <h3>Women's health and Development</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/14RsvNwV4YwImv5xDDdQhI9jBuou7GFg0/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="animals educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/loving animals.png" alt="">
+                    </div>
+                    <h3>Loving Animals</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1FLNYG4npeD_aZu8DIXvOe_Q6xgbCX_wI/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/" alt="">
+                    </div>
+                    <h3>The killer corset</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/10bQCJXzU50K46eNwe9bMP_3ed4eMQEy7/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="health educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/ABC's of Health.png" alt="">
+                    </div>
+                    <h3>ABC's of Health</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1v-Cf7D6bHBdeKUYWxZjnwJNx5-QwAEgu/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="art pastime book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Art Explained.png" alt="">
+                    </div>
+                    <h3>Art Explained</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1wzFb5X2r_703DO60enZVY5K30Qh2Cftl/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="animals educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/The illustrated encyclopedia of the animal kingdom.png" alt="">
+                    </div>
+                    <h3>The illustrated encyclopedia of the animal kingdom</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1hLX6jaFwoMVIs9SJX4qJwJOe2e3ibjDg/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="philosophy educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/မင်္ဂလသုတ် အနှစ်ချုပ်.png" alt="">
+                    </div>
+                    <h3>မင်္ဂလသုတ် အနှစ်ချုပ်</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1ap6UnQHNpiSqKa3rKExJzUtHmVHf6ZOm/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories pastime art book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/False Colours.png" alt="">
+                    </div>
+                    <h3>False Colors</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1lIalWqUflBV3audRZbYpU03O6a7WjnGs/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="health pastime philosophy book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Healing from within.png" alt="">
+                    </div>
+                    <h3>Healing from within</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1dCWIJViVEPw1pYz8_ZIE6zMvpa8HzxHS/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="philosophy educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/မြတ်ဗုဒ္ဓ‌ဒေသနာနှင့် ယနေ့ကမ္ဘာ.png" alt="">
+                    </div>
+                    <h3>မြတ်ဗုဒ္ဓ‌ဒေသနာနှင့် ယနေ့ကမ္ဘာ</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1noVTJuSqVfumOCwHaRn4uw4aI3_xdSiV/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="health pastime educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Make sleep your superpower.png" alt="">
+                    </div>
+                    <h3>Make Sleep your superpower</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1DJZ4_2Nuzto4b5aH3Lm5pazUz5UaL_C6/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories pastime art book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/Socially engaged art after socialism.png" alt="">
+                    </div>
+                    <h3>Socially engaged art after socialism</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1RP135PT7i2NSsriNec-_CSRrvl7-SJBJ/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="philosophy educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/သစ္စဒေသနာ ဓမ္မစကြာ.png" alt="">
+                    </div>
+                    <h3>သစ္စဒေသနာ ဓမ္မစကြာ</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1Y9kNnG8QRjK2LCzGCD2Cu8Axe1Ftqm5z/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="art stories educational pastime book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/The art of control.png" alt="">
+                    </div>
+                    <h3>The art of control</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/16JvGpe6VG6VWiQWd1BuTjz07lQpJVJms/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="psychology book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/The like switch.png" alt="">
+                    </div>
+                    <h3>The like switch</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1x9qqdRlsvl4nYyDXDWOhAd9nUF1nY_4A/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="philosophy educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/အဘိဓမ္မာ မြတ်ဒေသနာ- ၁.png" alt="">
+                    </div>
+                    <h3>အဘိဓမ္မာ မြတ်ဒေသနာ- ၁</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/19LqemE5TeyKm43ch_5REQX9pLpbsMHW4/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="philosophy educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/အဘိဓမ္မာ မြတ်ဒေသနာ- ၂.png" alt="">
+                    </div>
+                    <h3>အဘိဓမ္မာ မြတ်ဒေသနာ- ၂</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1Es7gMOj9BxWayPlVA9iSwSRem8dGog-M/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/The Hobbit.png" alt="">
+                    </div>
+                    <h3>The Hobbit</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1lFY3nsFnnE27_uuTVOG1CwOK-V4X6CWa/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/The lord of rings part-1.png" alt="">
+                    </div>
+                    <h3>The fellowship of the rings</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/11x4zXTByPYrflVJ6-GJ_eZPEyuZRSQct/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/The lord of rings part-3.png" alt="">
+                    </div>
+                    <h3>The Return of the King</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1lFY3nsFnnE27_uuTVOG1CwOK-V4X6CWa/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="stories book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/The two towers.png" alt="">
+                    </div>
+                    <h3>The two towers</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1_eeYzh_Lfg8TbGmTq2mjU2mGWC3YYFTl/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="health educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/The real life body book.png" alt="">
+                    </div>
+                    <h3>The real life body book</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1EJlAKVr8ExhIWFM3BOPYSaQCcFZHj4EW/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="philosophy educational book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/ဥပဒါနပစ္စယာ ဘဝေါ.png" alt="">
+                    </div>
+                    <h3>ဥပါဒါနပစ္စယာ ဘဝေါ</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1bjIRSXzluQFkQ8hWTdBrIhU54Rp_pCvu/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="health book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-1/The role of public health organizations.png" alt="">
+                    </div>
+                    <h3>The role of public health organizations</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1Vxo7oNGNo8SNJKi3F9s4EJBrMCOUR2mU/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="science book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-3/st1.png" alt="">
+                    </div>
+                    <h3>Introduction to information & communications technology</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1HCm7zTtHV5Kxhl9D08kD7qvYZulr1uma/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="science book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-3/st2.png" alt="">
+                    </div>
+                    <h3>Introduction to information and communication technologies</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1HTKyUUNNjZ_nAp-5WRjDI9WoeVioTCwK/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="science book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-3/st3.png" alt="">
+                    </div>
+                    <h3>Introduction to ICT by FDRE</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1GgIQb5t3g_McaTIyEXeKLedU_blUhPbI/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="math science book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-3/m3.png" alt="">
+                    </div>
+                    <h3>Modern Computer Arithmetic</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1HTKyUUNNjZ_nAp-5WRjDI9WoeVioTCwK/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+                <div class="art pastime book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-3/a.png" alt="">
+                    </div>
+                    <h3>Painting in the Dutch Golden Age</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1Gugc2vwGrak_zwFj_WBaYoIqekA0sPk_/view?usp=drive_link">Read</a>
+                    </div>
+                </div>
+                <div class="cooking pastime book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-3/f1.png" alt="">
+                    </div>
+                    <h3>EASY CHINESE CUISINE A Collection of 160 Chinese Recipes</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1GyRd0OenENyvzTukNUofiy_2B9-gqQII/view?usp=drive_link">Read</a>
+                    </div>
+                </div>
+                <div class="cooking pastime book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-3/f2.png" alt="">
+                    </div>
+                    <h3>China in 50 dishes</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1GzcVYVMgWbDP1wZDGz6aKwrZnF52aYfI/view?usp=drive_link">Read</a>
+                    </div>
+                </div>
+                <div class="cooking pastime book border shadow-sm rounded-lg">
+                    <div class="row">
+                        <img class="book-image" src="../bookImages-3/f3.png" alt="">
+                    </div>
+                    <h3>Falafel</h3>
+                    <div class="row justify-content-center">
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/1H74D-MpQWvKBsu9V6prXFnETWWEx8jcm/view?usp=sharing">Read</a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-center copycredit"><img class="copyimg" src="../Image/Anna.jfif" alt="">Credit to Anna's Archive Library</h2>
+            <h2 class="text-center copycredit"><img class="copyimg" src="../Image/infobooks.png" alt="">Credit to InfoBooks Library</h2>
+            <h2 class="text-center copycredit"><img class="copyimg" src="../Image/teacher su.jfif" alt="">Credit to Teacher Su's 2022 library</h2>
+            <h2 class="text-center copycredit"><img class="copyimg" src="../Image/dhamma.jfif" alt="">Credit to Dhamma Download Family</h2>
+        </div>
+    </div>
+    <div class="f-1">
+        <!--floating btn-->
+        <button class="btn floating-btn float-btn-II" onclick="home();"><p class="float-btn-text text-light"><: <i class="bi bi-house-fill"></i></p></button>
+    </div>
+    <script src="../JS/externalJs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+    <footer class="text-center text-lg-start  mt-5 py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>About EDU Library</h5>
+                    <p>Your one-stop solution for accessible educational resources. EDU Library is committed to
+                        providing free and accessible learning materials for students and educators worldwide.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-dark">EDU Library Homepage</a></li>
+                        <li><a href="services.html" class="text-dark">LIbrary Guide</a></li>
+                        <li><a href="about.html" class="text-dark">About Us</a></li>
+                        <li><a href="books.html" class="text-dark">Books</a></li>
+                        <li><a href="extended.html" class="text-dark">Advanced Category</a></li>
+                        <li><a href="../extraPages/FAQ.html" class="text-dark">FAQ</a></li>
+                        <li><a href="../References.docx" class="text-dark">Citation</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <p>Email: support@edulibrary.com</p>
+                    <p>Phone: +959773337073</p>
+                    <p>Phone: +66618845790</p>
+                    <div>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center bg-dark text-white py-2">
+        © 2024 EDU Library. All rights reserved.
+    </div>
+</body>
+</html>

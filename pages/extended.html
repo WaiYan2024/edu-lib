@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Categories | EDU Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../CSS/navfoot.css">
+    <link rel="stylesheet" href="../CSS/externalcss.css">
+    <link rel="stylesheet" href="../CSS/books.css">
+    <link rel="icon" type="image/x-icon" href="../Icon/favicon.ico">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-white fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="../Image/Logo.png" alt="Logo" width="50" height="50">
+            <a class="navbar-brand" href="index.html"><span class="navbar-text">EDUL</span></a>
+        </a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                    </svg>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="../pages/services.html">Library Guide</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/about.html">About Us</a></li>
+                <div class="edu-link-foundation">
+                    <li class="nav-item"><a class="nav-link edu-library-link" href="../index.html">EDU LIBRARY</a></li>
+                </div>
+                <li class="nav-item"><a class="nav-link" href="../pages/books.html">Books</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Advanced Category</a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="extended.html#stu">For Students</a>
+                        <a class="dropdown-item" href="extended.html#par">For Parents</a>
+                        <a class="dropdown-item" href="extended.html#tea">For Teachers</a>
+                        <a class="dropdown-item" href="extended.html#5min">For 5mins</a>
+                        <a class="dropdown-item" href="extended.html#lin">For Linguist</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link btn btn-outline-primary" href="../pages/login.html">Sign in/up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="f-1">
+        <!--floating btn-->
+        <button class="btn floating-btn float-btn-question" onclick="guide();"><p class="float-btn-text text-light"><i class="bi-question-lg"></i></p></button>
+        <button class="btn floating-btn float-btn-II" onclick="home();"><p class="float-btn-text text-light"><: <i class="bi bi-house-fill"></i></p></button>
+    </div>
+    <script src="../JS/externalJs.js"></script>
+    <div class="body-content">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <div class="container-fluid mt-4">
+                    <div class="row d-flex justify-content-center my-4" id="stu">
+                        <div class="col-md-9 mt-5 p-3 shadow-sm text-center bg-white">
+                            <div class="specific-head">
+                                <h1>Books for <b>Students</b></h1>
+                            </div>
+                            <hr>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-5 col-md-10">
+                                    <img class="specific-book-pic" src="../All about teens/Make Learning a Lifelong habit.png" alt="">
+                                </div>
+                                <div class="col-lg-7 col-md-10">
+                                    <p class="specific-p">Are you a <b>student</b>? Here are some specifically suggested educational books by EDUL founders for students. you may explore from the following <b>Explore
+                                            More button</b> </p>
+                                    <button class="btn btn-primary specific-book-btn"><a href="../extraPages/students.html">Explore More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center mt-4" id="par">
+                        <div class="col-md-9 mt-5 p-3 shadow-sm text-center bg-white">
+                            <div class="specific-head">
+                                <h1>Books for <b>Parents</b></h1>
+                            </div>
+                            <hr>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-5 col-md-10">
+                                    <img class="specific-book-pic" src="https://bobosfun.com/wp-content/uploads/2020/04/AdobeStock_175282766-1024x683.jpeg" alt="">
+                                </div>
+                                <div class="col-lg-7 col-md-10">
+                                    <p class="specific-p">Are you a <b>parent</b>? Here are some specifically suggested helpful books by EDUL founders for parents. you may explore from the following <b>Explore
+                                            More button</b> </p>
+                                    <button class="btn btn-primary specific-book-btn"><a href="../extraPages/parents.html">Explore More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center mt-4" id="tea">
+                        <div class="col-md-9 mt-5 p-3 shadow-sm text-center bg-white">
+                            <div class="specific-head">
+                                <h1>Books for <b>Teachers</b></h1>
+                            </div>
+                            <hr>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-5 col-md-10">
+                                    <img class="specific-book-pic" src="../teachers/When adminstrators keep teaching.png" alt="">
+                                </div>
+                                <div class="col-lg-7 col-md-10">
+                                    <p class="specific-p">Are you a <b>Teacher</b>? Here are some specifically suggested helpful books by EDUL founders for teachers. you may explore from the following <b>Explore
+                                            More button</b> </p>
+                                    <button class="btn btn-primary specific-book-btn"><a href="../extraPages/teachers.html">Explore More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center mt-4" id="5min">
+                        <div class="col-md-9 mt-5 p-3 shadow-sm text-center bg-white">
+                            <div class="specific-head">
+                                <h1>Suggested <b>5min-read</b> Books</h1>
+                            </div>
+                            <hr>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-5 col-md-10">
+                                    <img class="specific-book-pic" src="../Image/EDUSN digital.jpg" alt="">
+                                </div>
+                                <div class="col-lg-7 col-md-10">
+                                    <p class="specific-p">Are you a <b>busy</b> person? Here are some specifically suggested short books by <b>Principal Thiha Win, EDUSN</b> for you. you may explore from the following <b>Explore
+                                            More button</b> </p>
+                                    <button class="btn btn-primary specific-book-btn"><a href="../extraPages/short.html">Explore More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center mt-4" id="lin">
+                        <div class="col-md-9 mt-5 p-3 shadow-sm text-center bg-white">
+                            <div class="specific-head">
+                                <h1>Language Learners' Books for <b>Linguists</b></h1>
+                            </div>
+                            <hr>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-5 col-md-10">
+                                    <img class="specific-book-pic" src="../Image/infobooks name.png" alt="">
+                                </div>
+                                <div class="col-lg-7 col-md-10">
+                                    <p class="specific-p">Are you a <b>linguist</b>? Here are some specifically suggested helpful Language Learners' books by <b>InfoBooks Library</b> for you. you may explore from the following <b>Explore
+                                            More button</b> </p>
+                                    <button class="btn btn-primary specific-book-btn"><a href="../extraPages/language.html">Explore More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/externalJs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+    <footer class="text-center text-lg-start  mt-5 py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>About EDU Library</h5>
+                    <p>Your one-stop solution for accessible educational resources. EDU Library is committed to
+                        providing free and accessible learning materials for students and educators worldwide.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-dark">EDU Library Homepage</a></li>
+                        <li><a href="services.html" class="text-dark">LIbrary Guide</a></li>
+                        <li><a href="about.html" class="text-dark">About Us</a></li>
+                        <li><a href="books.html" class="text-dark">Books</a></li>
+                        <li><a href="extended.html" class="text-dark">Advanced Category</a></li>
+                        <li><a href="../extraPages/FAQ.html" class="text-dark">FAQ</a></li>
+                        <li><a href="../References.docx" class="text-dark">Citation</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <p>Email: support@edulibrary.com</p>
+                    <p>Phone: +959773337073</p>
+                    <p>Phone: +66618845790</p>
+                    <div>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center bg-dark text-white py-2">
+        © 2024 EDU Library. All rights reserved.
+    </div>
+</body>
+</html>
