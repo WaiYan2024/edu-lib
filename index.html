@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | EDU Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/homepage.css">
+    <link rel="stylesheet" href="CSS/navfoot.css">
+    <link rel="icon" type="image/x-icon" href="Icon/favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-white">
+        <a class="navbar-brand" href="#">
+            <img src="Image/Logo.png" alt="Logo" width="50" height="50">
+            <a class="navbar-brand" href="index.html"><span class="navbar-text">EDUL</span></a>
+        </a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                    </path>
+                </svg>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="pages/services.html">Library Guide</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/about.html">About Us</a></li>
+                <div class="edu-link-foundation">
+                    <li class="nav-item"><a class="nav-link edu-library-link" href="index.html">EDU LIBRARY</a></li>
+                </div>
+                <li class="nav-item"><a class="nav-link" href="pages/books.html">Books</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="pages/extended.html" data-bs-toggle="dropdown">Advanced Category</a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="pages/extended.html#stu">For Students</a>
+                        <a class="dropdown-item" href="pages/extended.html#par">For Parents</a>
+                        <a class="dropdown-item" href="pages/extended.html#tea">For Teachers</a>
+                        <a class="dropdown-item" href="pages/extended.html#5min">For 5mins</a>
+                        <a class="dropdown-item" href="pages/extended.html#lin">For Linguist</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link btn btn-outline-primary" href="pages/login.html">Sign in/up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="f-1">
+        <button class="btn floating-btn float-btn-II" onclick="homeGuide();">
+            <p class="float-btn-text text-light"><i class="bi bi-question-lg"></i></p>
+        </button>
+        <button class="btn floating-btn float-btn" onclick="homelibrary();">
+            <p class="float-btn-text text-light"><i class="bi bi-book-half"> :></i></p>
+        </button>
+    </div>
+    <div class="page">
+        <div class="page">
+            <div class="container mt-5">
+                <div class="edu-library shadow-sm p-5 rounded-lg d-flex align-items-center">
+                    <div class="text-content">
+                        <h1>EDU Library</h1>
+                        <p class="mb-4">Are you seeking for easily accessible non-profit digital library? Explore our
+                            comprehensive library resources for students and educators. Access thousands
+                            of materials, ranging from textbooks to advanced learning resources. Let EDU Library be your
+                            go-to
+                            source for all academic needs.</p>
+                        <div class="d-flex mt-4">
+                            <a href="#" class="btn btn-primary mx-2 px-4 py-2" onclick="explore();">Explore About
+                                us></a>
+                            <a href="#" class="btn btn-outline-primary mx-2 px-4 py-2" onclick="homelibrary();">Explore
+                                EDUL
+                                Books</a>
+                        </div>
+                    </div>
+                    <div class="image-content book-pic ml-5 ps-3">
+                        <img src="Image/Logo.png" alt="Library Icon" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="content-I content-I-text col-md-9 p-5 justify-content-center border shadow-sm rounded-lg">
+                    <div class="text-start px-5">
+                        <h3>Why should you read?</h3>
+                        <hr>
+                    </div>
+                    <div class="row justify-content-center align-items-center flex-wrap">
+                        <div class="col-md-11 mt-3 px-2">
+                            <p>As most people know time is valuable, meaning we must use it wisely. Instead of wasting
+                                10mins on something unnecessary, reading for 10mins can benefits us a lot. 10mins hereby
+                                mean 10mins of your life, not 10mins of a clock. Your life, Your Choice but make sure
+                                you spend your life wisely. </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center flex-wrap">
+                        <div class="col-lg-7 col-md-11 mt-3 px-2">
+                            Talking about why should we read, it is because it can bring us large impacts. In fact, it
+                            can change us completely. An article (Whole Readers, Chad Jones, Oct 2023) has stated that
+                            studies had shown that reading can improve our brains' cognitive functions (our Critical
+                            thinking skills), helping us to understand complex subjects. It also can open a person's
+                            mind up, showcasing different perspectives from all over the world on different subjects.
+                            Meaning it can change a person's wisdom and intelligence permanently resulting in better
+                            decisions. Also, reading tickle our curiosity, reducing our stress and pressure on muscles
+                            around our body, benefiting physically as well.
+                        </div>
+                        <div class="col-lg-4 col-md-11">
+                            <img src="Image/bookpic.jpg" class="book-pic AbtUs-img-I" alt="book-pic">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center flex-wrap">
+                        <div class="col-md-11 mt-3 px-2">
+                            <p>That's why reading should be a part of your pastimes, understanding the benefits and
+                                valuing each and every second in your life. And let our EDU Library help you to become a
+                                better you.</p>
+                            <p><b>By EDUL founders</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mt-5">
+                <div class="row d-flex justify-content-center mt-4">
+                    <div class="col-md-9 mt-5">
+                        <div class=" p-3 text-center bg-white shadow-sm rounded-lg">
+                            <div class="faqHead">
+                                <h1>FAQ Section</h1>
+                            </div>
+                            <hr>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 col-md-10">
+                                    <h1 class="faq-topic">FAQ</h1>
+                                    <p class="faq-p">If you want to know most frequently asked questions about
+                                        <b>EDUL</b> Digital Library you may explore from the following button.
+                                    </p>
+                                    <button class="btn btn-primary faq-btn">
+                                        <a href="extraPages/FAQ.html" class="faq-link">Read More</a>
+                                    </button>
+                                </div>
+                                <div class="col-lg-4 col-md-10 faq-photo">
+                                    <img class="AbtUs-img AbtUs-img-I" src="Image/FAQ.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid newsletter">
+                <div class="row d-flex justify-content-center text-center mt-4">
+                    <div class="col-md-7">
+                        <h1 class="news">EDU Library</h1>
+                        <h5 class="mt-4">Subscribe to get messages when new things are up from your Email.</h5>
+                        <h5>Join our Newsletter!!!</h5>
+                        <div class="form-floating mt-3">
+                            <input type="Email" class="form-control" placeholder="Email" id="emsub" required>
+                            <label class="form-label" for="emsub">Enter your Email Address</label>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button type="button" class="btn btn-primary emsssb"
+                                Onclick="alert('Welcome to EDU Library! You are now a member of our Newsletter Team. We will inform you from your email, if there are new updates!!!')">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center text-lg-start  mt-5 py-4 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <h5>About EDU Library</h5>
+                        <p>Your one-stop solution for accessible educational resources. EDU Library is committed to
+                            providing free and accessible learning materials for students and educators worldwide.</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-dark">EDU Library Homepage</a></li>
+                            <li><a href="pages/services.html" class="text-dark">LIbrary Guide</a></li>
+                            <li><a href="pages/about.html" class="text-dark">About Us</a></li>
+                            <li><a href="pages/books.html" class="text-dark">Books</a></li>
+                            <li><a href="pages/extended.html" class="text-dark">Advanced Category</a></li>
+                            <li><a href="extraPages/FAQ.html" class="text-dark">FAQ</a></li>
+                            <li><a href="References.docx" class="text-dark">Citation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5>Contact Us</h5>
+                        <p>Email: support@edulibrary.com</p>
+                        <p>Phone: +959773337073</p>
+                        <p>Phone: +66618845790</p>
+                        <div>
+                            <a href="#" class="text-dark me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="text-center bg-dark text-white py-2">
+            © 2024 EDU Library. All rights reserved.
+        </div>
+
+        <script>
+            const currentPath = window.location.pathname;
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+            function explore() {
+                window.location.assign('pages/about.html');
+            }
+        </script>
+        <script src="JS/externalJs.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+
+</body>
+
+</html>
